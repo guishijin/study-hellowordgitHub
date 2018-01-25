@@ -1,0 +1,11 @@
+1、解压缩live.2016.08.07.tar.gz到当前目录live
+
+2、修改live/config.armlinux的内容如下：
+CROSS_COMPILE?=		/opt/DVRRDK_02.00.00.23/ti_tools/cgt_a8/arm-2009q1/bin/arm-none-linux-gnueabi-
+
+3、执行./genMakefiles armlinux脚本生成MakeFile文件
+
+4、执行make命令，编译live555
+
+5、拷贝生成的bin文件live/proxyServer/live555ProxyServer到NFS
+
